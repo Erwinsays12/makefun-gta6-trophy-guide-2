@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — all 55 trophies</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI PlayStation 5 trophies: roadmap to the platinum, missable flags, cited guides, saved checklist.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+  <h1>Leonida Trophy Guide &amp; Tracker</h1>
+  <p class="lede">Every trophy, its official name and description, a guide in our own words with its sources, a roadmap to the platinum — and a checklist that remembers what you have earned. Works fully offline.</p>
+  <div class="progress-wrap" aria-label="Progress">
+    <div class="progress-head">
+      <strong id="progress-text">0 of 55 earned</strong>
+      <span id="progress-pct">0%</span>
+    </div>
+    <div class="progress-bar"><div id="progress-fill" class="progress-fill" style="width:0%"></div></div>
+    <p id="grade-counts" class="grade-counts"></p>
+  </div>
+</header>
+
+<main>
+  <section class="toolbar" aria-label="Filters and tools">
+    <label class="search-label">Search <input id="search" type="search" placeholder="Trophy name, mission or keyword…" autocomplete="off"></label>
+    <div class="chips" id="kind-chips" role="group" aria-label="Filter by kind">
+      <button type="button" data-kind="all" class="chip active">All 55</button>
+      <button type="button" data-kind="story" class="chip">Story</button>
+      <button type="button" data-kind="missable" class="chip chip-warn">Missable</button>
+      <button type="button" data-kind="collectibles" class="chip">Collectibles</button>
+      <button type="button" data-kind="activities" class="chip">Activities</button>
+      <button type="button" data-kind="online" class="chip">Online</button>
+      <button type="button" data-kind="general" class="chip">Free roam &amp; combat</button>
+    </div>
+    <div class="toolbar-row">
+      <label>Grade
+        <select id="grade-select">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="check"><input id="spoiler-toggle" type="checkbox" checked> Spoiler-free: hide story trophies until earned</label>
+      <label class="check"><input id="hide-earned" type="checkbox"> Hide earned</label>
+      <button id="export-btn" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="import-input" type="file" accept="application/json,.json"></label>
+      <button id="reset-btn" type="button" class="ghost">Reset progress</button>
+    </div>
+  </section>
+
+  <aside class="missable-banner" id="missable-banner">
+    <strong>One missable trophy.</strong>
+    <span><a href="#trophy-28">Positive Mental Attitude</a> — meditate at all 18 spots. Lucia&rsquo;s balcony spot is only available in Chapter 1, so do it before Chapter 1 ends. There is no mission replay, so keep a manual save at the start of every chapter.</span>
+  </aside>
+
+  <section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+    <h2>Roadmap to the platinum</h2>
+    <p class="section-note">Six stages, built from the official trophy descriptions. Story first, the one missable early, then the long counts.</p>
+    <ol id="roadmap-list" class="roadmap-list"></ol>
+  </section>
+
+  <section aria-label="Trophy checklist">
+    <h2 id="list-heading">Checklist</h2>
+    <p id="result-count" class="section-note"></p>
+    <div id="trophy-list" class="trophy-list"></div>
+    <p id="empty-state" class="empty-state" hidden></p>
+  </section>
+
+  <section class="about" aria-label="About this guide">
+    <h2>Sources &amp; method</h2>
+    <p>Names, descriptions and grades are the official PlayStation 5 list, as Exophase and PSNProfiles published it on 18 November 2026: 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze, 28 of them hidden on PlayStation until earned. Every guide on this page is written in our own words from that list and the sources named beside it; no guide text is copied from another guide. Where early reports say an unlock method is not yet confirmed, the guide says so instead of guessing. This guide is not affiliated with Rockstar Games, and it uses no Rockstar logo, artwork or screenshots of the game.</p>
+    <p id="source-list"></p>
+    <p>Progress is saved in your browser (localStorage) and never leaves your device. Export it to a file to back it up or move it to another browser, and import it back here.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Trophy Guide &amp; Tracker — an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. Works offline; this page makes no network requests.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
